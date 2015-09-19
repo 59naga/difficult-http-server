@@ -1,0 +1,19 @@
+{
+  "name": "difficult-http-server",
+  "bin": {
+    "dhs": "difficult-http-server"
+  },
+  "version": "0.0.0-alpha",
+  "description": "static-server & bower compressor & coffee-script / jade / stylus single compiler",
+
+  "keywords": [],
+  "author": "59naga <i59naga@icloud.com> (http://berabou.me)",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.8.1",
+    "express": "^4.13.3",
+    "express-cjs": "0.0.6-beta",
+    "express-onefile": "0.0.0-beta",
+    "touch": "^1.0.0"
+  }
+}
