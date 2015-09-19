@@ -3,7 +3,7 @@
   "bin": {
     "dhs": "difficult-http-server"
   },
-  "version": "0.0.0-alpha",
+  "version": "0.0.0",
   "description": "static-server & bower compressor & coffee-script / jade / stylus single compiler",
 
   "keywords": [],
@@ -12,8 +12,8 @@
   "dependencies": {
     "commander": "^2.8.1",
     "express": "^4.13.3",
-    "express-cjs": "0.0.6-beta",
-    "express-onefile": "0.0.0-beta",
+    "express-cjs": "^0.0.6",
+    "express-onefile": "^0.0.0",
     "touch": "^1.0.0"
   }
 }

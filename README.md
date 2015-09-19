@@ -1,4 +1,4 @@
-DifficultHTTPServer [![NPM version][npm-image]][npm] [![Build Status][travis-image]][travis]
+DifficultHTTPServer [![NPM version][npm-image]][npm]
 ---
 
 > static-server & coffee-script / jade / stylus single compiler & bower compressor
