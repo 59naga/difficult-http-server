@@ -45,6 +45,7 @@ to static serving.
 * [express][1]
 * [express-cjs][2] ([coffee-script][2-1] / [jade][2-2] / [stylus][2-3])
 * [express-onefile][3] ([bower][3-1] / [onefile][3-2])
+* __difficult-http-server__
 
 [1]: https://github.com/strongloop/express#readme
 
