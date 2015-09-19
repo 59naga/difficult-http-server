@@ -1,4 +1,4 @@
-DifficultHTTPServer
+DifficultHTTPServer [![NPM version][npm-image]][npm] [![Build Status][travis-image]][travis]
 ---
 
 > static-server & coffee-script / jade / stylus single compiler & bower compressor
@@ -61,3 +61,14 @@ to static serving.
 License
 ---
 [MIT][License]
+
+[License]: http://59naga.mit-license.org/
+
+[sauce-image]: http://soysauce.berabou.me/u/59798/difficult-http-server.svg
+[sauce]: https://saucelabs.com/u/59798
+[npm-image]:https://img.shields.io/npm/v/difficult-http-server.svg?style=flat-square
+[npm]: https://npmjs.org/package/difficult-http-server
+[travis-image]: http://img.shields.io/travis/59naga/difficult-http-server.svg?style=flat-square
+[travis]: https://travis-ci.org/59naga/difficult-http-server
+[coveralls-image]: http://img.shields.io/coveralls/59naga/difficult-http-server.svg?style=flat-square
+[coveralls]: https://coveralls.io/r/59naga/difficult-http-server?branch=master
