@@ -7,6 +7,8 @@ DifficultHTTPServer [![NPM version][npm-image]][npm]
 
 ```bash
 npm install difficult-http-server --global
+
+# create empty project
 mkdir my-project
 cd my-project
 dhs touch
@@ -16,6 +18,12 @@ tree .
 # ├── index.jade
 # └── index.styl
 
+# optional
+npm install bower --global
+bower init # yes, yes, yes...
+bower install angular-ui-router --save
+
+# boot the DifficultHTTPServer
 dhs .
 # http://localhost:59798 <- .
 ```
@@ -32,14 +40,14 @@ parse `/index.coffee` with [ng-annotate][A]
 parse `/index.styl` with [kouto-swiss][B]
 
 ### `GET /pkgs.js` / `GET /pkgs.min.js`
-compress bower files using [onefile][C]
+compress bower files using [express-onefile][C]
 
 ### `Otherwise`
 to static serving.
 
 [A]: https://github.com/olov/ng-annotate#readme
 [B]: https://github.com/krkn/kouto-swiss#readme
-[C]: https://github.com/59naga/onefile#readme
+[C]: https://github.com/59naga/express-onefile#readme
 
 # See also
 * [express][1]
