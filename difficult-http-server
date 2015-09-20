@@ -6,6 +6,8 @@ var dhs= require('./');
 
 var commander= require('commander');
 var touch= require('touch');
+var open= require('open');
+
 var path= require('path');
 
 // Commands
@@ -13,6 +15,7 @@ commander
   .version(require('./package').version)
   .usage('<rootDir>')
   .option('-p --port <number>','listening port <number>',59798)
+  .option('-o, --open [browser]','open the `http://localhost`')
 ;
 
 commander
@@ -34,15 +37,17 @@ commander
 commander
   .command('*')
   .description('boot the difficult-http-server at <rootDir>')
-  .action(function(rootDir){
-    var options= {
-      cwd:path.resolve(process.cwd(),rootDir),
-    };
-
+  .action(function(rootDir,options){
     var app= express();
-    app.use(dhs(options));
+    app.use(dhs({cwd:path.resolve(process.cwd(),rootDir)}));
     app.listen(commander.port,function(){
-      console.log('http://localhost:%s <- %s',commander.port,rootDir);
+      var url= 'http://localhost:'+commander.port;
+      console.log('%s <- %s',url,url,rootDir);
+
+      if(commander.open){
+        var browser= commander.open===true ? null: commander.open;
+        open(url,browser);
+      }
     });
   })
 ;
