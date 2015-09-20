@@ -10,7 +10,7 @@ var path= require('path');
 
 // Commands
 commander
-  .version(require('./package'))
+  .version(require('./package').version)
   .usage('<rootDir>')
   .option('-p --port <number>','listening port <number>',59798)
 ;
