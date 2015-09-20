@@ -3,17 +3,24 @@
   "bin": {
     "dhs": "difficult-http-server"
   },
-  "version": "0.0.0",
+  "version": "0.0.1-alpha",
+
   "description": "static-server & bower compressor & coffee-script / jade / stylus single compiler",
 
-  "keywords": [],
+  "keywords": [
+    "coffee-script",
+    "jade",
+    "stylus",
+    "bower",
+    "express"
+  ],
   "author": "59naga <i59naga@icloud.com> (http://berabou.me)",
   "license": "MIT",
   "dependencies": {
     "commander": "^2.8.1",
     "express": "^4.13.3",
     "express-cjs": "^0.0.6",
-    "express-onefile": "^0.0.0",
+    "express-onefile": "^0.0.1-alpha",
     "touch": "^1.0.0"
   }
 }
