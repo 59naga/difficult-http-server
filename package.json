@@ -20,7 +20,7 @@
     "commander": "^2.8.1",
     "express": "^4.13.3",
     "express-cjs": "^0.0.6",
-    "express-onefile": "^0.0.1-alpha",
+    "express-onefile": "^0.0.1-beta",
     "open": "0.0.5",
     "touch": "^1.0.0"
   }
