@@ -20,7 +20,7 @@ tree .
 
 # optional
 npm install bower --global
-bower init # yes, yes, yes...
+yes '' | bower init # enter enter enter...
 bower install angular-ui-router --save
 
 # boot the DifficultHTTPServer
