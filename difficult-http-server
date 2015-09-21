@@ -42,7 +42,7 @@ commander
     app.use(dhs({cwd:path.resolve(process.cwd(),rootDir)}));
     app.listen(commander.port,function(){
       var url= 'http://localhost:'+commander.port;
-      console.log('%s <- %s',url,url,rootDir);
+      console.log('%s <- %s',url,rootDir);
 
       if(commander.open){
         var browser= commander.open===true ? null: commander.open;
