@@ -29,8 +29,21 @@ npm install bower --global
 bower init # or `yes '' | bower init`
 bower install angular-ui-router --save
 
+# setup `GET /`(optional)
+echo 'doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title dhs
+    script(src="pkgs.js")
+    script(src="index.js")
+    link(href="index.css" rel="stylesheet")
+  body
+    h1 hello dhs
+' > index.jade
+
 # boot
-dhs .
+dhs . --open
 # DifficultHTTPServer at http://localhost:59798 using .
 ```
 
@@ -46,7 +59,7 @@ parse `/index.coffee` using [coffeeify][A] with [browserify-plain-jade][B] + [ng
 parse `/index.styl` with [kouto-swiss][D]
 
 ### `GET /pkgs.js` / `GET /pkgs.min.js`
-compress bower files using [express-onefile][E]
+combine [dependencies of /bower.json](https://github.com/ck86/main-bower-files#options) using [express-onefile][E]
 
 ### `Otherwise`
 to static serving.
