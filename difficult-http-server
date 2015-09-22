@@ -14,7 +14,7 @@ var path= require('path');
 commander
   .version(require('./package').version)
   .usage('<rootDir>')
-  .option('-p --port <number>','listening port <number>',59798)
+  .option('-p, --port <number>','listening port <number>',59798)
   .option('-o, --open [browser]','open the `http://localhost`')
 ;
 

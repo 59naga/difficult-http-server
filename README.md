@@ -47,6 +47,9 @@ dhs . --open
 # DifficultHTTPServer at http://localhost:59798 using .
 ```
 
+## Other options
+See also `$ dhs`
+
 ## Routes
 
 ### `GET /`
