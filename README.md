@@ -1,7 +1,11 @@
 DifficultHTTPServer [![NPM version][npm-image]][npm]
 ---
 
-> static-server & coffee-script / jade / stylus single compiler & bower compressor
+> Instant HTTP Server for Single Page Application
+
+* static-server
+* single file compiler([coffeify][A] / [jade][2-2] / [stylus][2-3])
+* bower compressor
 
 # Usage
 
@@ -11,6 +15,8 @@ npm install difficult-http-server --global
 # create empty project
 mkdir my-project
 cd my-project
+
+# create empty files
 dhs touch
 tree .
 # my-project
@@ -18,12 +24,12 @@ tree .
 # ├── index.jade
 # └── index.styl
 
-# optional
+# fetch packages(optional)
 npm install bower --global
-yes '' | bower init # enter enter enter...
+bower init # or `yes '' | bower init`
 bower install angular-ui-router --save
 
-# boot the DifficultHTTPServer
+# boot
 dhs .
 # http://localhost:59798 <- .
 ```
@@ -34,20 +40,22 @@ dhs .
 parse `/index.jade`
 
 ### `GET /index.js`
-parse `/index.coffee` with [ng-annotate][A]
+parse `/index.coffee` using [coffeeify][A] with [browserify-plain-jade][B] + [ng-annotate][C]
 
 ### `GET /index.css`
-parse `/index.styl` with [kouto-swiss][B]
+parse `/index.styl` with [kouto-swiss][D]
 
 ### `GET /pkgs.js` / `GET /pkgs.min.js`
-compress bower files using [express-onefile][C]
+compress bower files using [express-onefile][E]
 
 ### `Otherwise`
 to static serving.
 
-[A]: https://github.com/olov/ng-annotate#readme
-[B]: https://github.com/krkn/kouto-swiss#readme
-[C]: https://github.com/59naga/express-onefile#readme
+[A]: https://github.com/substack/coffeeify#readme
+[B]: https://github.com/redhotvengeance/browserify-plain-jade#readme
+[C]: https://github.com/olov/ng-annotate#readme
+[D]: https://github.com/krkn/kouto-swiss#readme
+[E]: https://github.com/59naga/express-onefile#readme
 
 # See also
 * [express][1]

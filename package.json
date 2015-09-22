@@ -4,10 +4,19 @@
     "dhs": "difficult-http-server"
   },
   "version": "0.0.1-alpha",
+  "description": "Instant HTTP Server for Single Page Application",
 
-  "description": "static-server & bower compressor & coffee-script / jade / stylus single compiler",
+  "dependencies": {
+    "commander": "^2.8.1",
+    "express": "^4.13.3",
+    "express-cjs": "^0.0.6",
+    "express-onefile": "^0.0.1",
+    "open": "0.0.5",
+    "touch": "^1.0.0"
+  },
 
   "keywords": [
+    "spa",
     "coffee-script",
     "jade",
     "stylus",
@@ -16,12 +25,12 @@
   ],
   "author": "59naga <i59naga@icloud.com> (http://berabou.me)",
   "license": "MIT",
-  "dependencies": {
-    "commander": "^2.8.1",
-    "express": "^4.13.3",
-    "express-cjs": "^0.0.6",
-    "express-onefile": "^0.0.1-beta",
-    "open": "0.0.5",
-    "touch": "^1.0.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/59naga/difficult-http-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/59naga/difficult-http-server/issues"
+  },
+  "homepage": "https://github.com/59naga/difficult-http-server#readme"
 }
