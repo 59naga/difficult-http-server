@@ -36,7 +36,7 @@ commander
 
 commander
   .command('*')
-  .description('boot the difficult-http-server at *<rootDir>')
+  .description('boot the DifficultHTTPServer at *<rootDir>')
   .action(function(rootDir,options){
     var app= express();
     app.use(dhs({cwd:path.resolve(process.cwd(),rootDir)}));
