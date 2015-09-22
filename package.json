@@ -3,7 +3,7 @@
   "bin": {
     "dhs": "difficult-http-server"
   },
-  "version": "0.0.1-alpha",
+  "version": "0.0.1",
   "description": "Instant HTTP Server for Single Page Application",
 
   "dependencies": {

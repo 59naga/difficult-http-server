@@ -16,7 +16,7 @@ npm install difficult-http-server --global
 mkdir my-project
 cd my-project
 
-# create empty files
+# create empty files(requirement)
 dhs touch
 tree .
 # my-project
@@ -31,7 +31,7 @@ bower install angular-ui-router --save
 
 # boot
 dhs .
-# http://localhost:59798 <- .
+# DifficultHTTPServer at http://localhost:59798 using .
 ```
 
 ## Routes

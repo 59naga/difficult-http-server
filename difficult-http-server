@@ -20,7 +20,7 @@ commander
 
 commander
   .command('touch [index]')
-  .description('touch the [index](.coffee .jade .styl)')
+  .description('`touch [index].coffee [index].jade [index].styl`')
   .action(function(name){
     if(name==null){
       name= 'index';
@@ -36,13 +36,13 @@ commander
 
 commander
   .command('*')
-  .description('boot the difficult-http-server at <rootDir>')
+  .description('boot the difficult-http-server at *<rootDir>')
   .action(function(rootDir,options){
     var app= express();
     app.use(dhs({cwd:path.resolve(process.cwd(),rootDir)}));
     app.listen(commander.port,function(){
       var url= 'http://localhost:'+commander.port;
-      console.log('%s <- %s',url,rootDir);
+      console.log('DifficultHTTPServer at %s using %s',url,rootDir);
 
       if(commander.open){
         var browser= commander.open===true ? null: commander.open;
