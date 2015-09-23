@@ -5,7 +5,7 @@ module.exports= function(options){
   var cjs= require('express-cjs');
   var onefile= require('express-onefile');
   
-  // 
+  // Setup middleware
   var middleware= express.Router();
   middleware.use(onefile(options));
   middleware.use(cjs({root:options.cwd}));
