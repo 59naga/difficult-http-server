@@ -1,10 +1,11 @@
-// Dependencies
-var express= require('express');
-var cjs= require('express-cjs');
-var onefile= require('express-onefile');
-
 // Public
 module.exports= function(options){
+  // Dependencies
+  var express= require('express');
+  var cjs= require('express-cjs');
+  var onefile= require('express-onefile');
+  
+  // 
   var middleware= express.Router();
   middleware.use(onefile(options));
   middleware.use(cjs({root:options.cwd}));
