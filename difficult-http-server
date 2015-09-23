@@ -16,7 +16,7 @@ commander
   .usage('<rootDir>')
   .option('-p, --port <number>','listening port <number>',59798)
   .option('-o, --open [browser]','open the `http://localhost`')
-  .option('-B, --no-bundle-external','turn off bundling of all external modules in `/pkgs.js`')
+  .option('-B, --no-bundle-external','turn off bundling of all external modules in `/pkgs.js`',true)
 ;
 
 commander

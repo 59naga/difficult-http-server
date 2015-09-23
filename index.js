@@ -8,7 +8,7 @@ module.exports= function(options){
   // Setup middleware
   var middleware= express.Router();
   middleware.use(onefile(options));
-  middleware.use(cjs({root:options.cwd}));
+  middleware.use(cjs({root:options.cwd,bundleExternal:options.bundleExternal}));
 
   // Fix by https://gist.github.com/59naga/b6bb5cd3ef3e2eb6cc09
   middleware.use(function(req,res,next){
