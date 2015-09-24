@@ -29,22 +29,24 @@ npm install bower --global
 bower init # or `yes '' | bower init`
 bower install angular-ui-router --save
 
-# setup `GET /`(optional)
-echo 'doctype html
+# boot
+dhs . --open
+# DifficultHTTPServer at http://localhost:59798 using .
+```
+
+`index.jade`
+
+```jade
+doctype html
 html
   head
     meta(charset="UTF-8")
-    title dhs
+    title DifficultHTTPServer
     script(src="pkgs.js")
     script(src="index.js")
     link(href="index.css" rel="stylesheet")
   body
     h1 hello dhs
-' > index.jade
-
-# boot
-dhs . --open
-# DifficultHTTPServer at http://localhost:59798 using .
 ```
 
 ## Other options
