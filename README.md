@@ -75,6 +75,9 @@ to static serving.
 [D]: https://github.com/krkn/kouto-swiss#readme
 [E]: https://github.com/59naga/express-onefile#readme
 
+# Example
+* [narou.berabou.me](https://github.com/59naga/narou.berabou.me) Vertical reader of japanese novel sns
+
 # See also
 * [express][1]
 * [express-cjs][2] ([coffee-script][2-1] / [jade][2-2] / [stylus][2-3])
