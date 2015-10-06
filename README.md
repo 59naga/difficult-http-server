@@ -76,7 +76,15 @@ to static serving.
 [E]: https://github.com/59naga/express-onefile#readme
 
 # Example
-* [narou.berabou.me](https://github.com/59naga/narou.berabou.me) Vertical reader of japanese novel sns
+* [narou.berabou.me](https://github.com/59naga/narou.berabou.me) `http://syosetu.com/` Vertical Reader
+* [vpn.berabou.me](https://github.com/59naga/vpn.berabou.me) MikuMikuDance Vocaloid-Pose-Data(`.vpd`) Viewer 
+* [nicolive.berabou.me](https://github.com/59naga/nicolive.berabou.me) `http://live.nicovideo.jp/` Comment Viewer
+
+# Awesome converters
+* [js2coffee 2.0 — convert JavaScript to CoffeeScript](http://js2.coffee/) by [Rico Sta. Cruz](https://github.com/rstacruz)
+* [HTML2Jade - HTML to Jade Online Realtime Converter](http://html2jade.org/) by [Don Park
+](https://github.com/donpark)
+* [Css2Stylus - Convert your #CSS into #Stylus!](http://css2stylus.com/) by [Denis Ciccale](https://github.com/dciccale)
 
 # See also
 * [express][1]
