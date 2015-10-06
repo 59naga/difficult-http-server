@@ -3,9 +3,9 @@ DifficultHTTPServer [![NPM version][npm-image]][npm]
 
 > Instant HTTP Server for Single Page Application
 
-* single file compiler([coffeeify][A] / [jade][2-2] / [stylus][2-3])
-* bower compressor
 * static-server
+* bower compressor
+* single file compiler([coffeeify][A] / [jade][2-2] / [stylus][2-3])
 
 # Usage
 
