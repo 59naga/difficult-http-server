@@ -32,7 +32,6 @@ commander
     touch.sync(name+'.styl');
     process.exit(0);
   })
-  .parse(process.argv)
 ;
 
 commander
