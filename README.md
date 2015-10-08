@@ -67,7 +67,7 @@ parse `/index.styl` with [kouto-swiss][D]
 combine [dependencies of /bower.json](https://github.com/ck86/main-bower-files#options) using [express-onefile][E]
 
 ### `Otherwise`
-to static serving.
+to static serving. (__If a static file exists, the middlewares will not be executed__)
 
 [A]: https://github.com/substack/coffeeify#readme
 [B]: https://github.com/redhotvengeance/browserify-plain-jade#readme
