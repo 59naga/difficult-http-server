@@ -9,7 +9,7 @@
   "dependencies": {
     "commander": "^2.8.1",
     "express": "^4.13.3",
-    "express-cjs": "^0.0.7-alpha",
+    "express-cjs": "^0.0.7-beta",
     "express-onefile": "^0.0.5",
     "open": "0.0.5",
     "touch": "^1.0.0"
