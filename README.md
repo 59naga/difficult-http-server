@@ -58,7 +58,7 @@ See also `$ dhs`
 parse `/index.jade`
 
 ### `GET /index.js`
-parse `/index.coffee` using [coffeeify][A] with [ng-annotate][C] + [jadeify][B] + [brfs][F]
+parse `/index.coffee` using [coffee-reactify][A] with [ng-annotate][C] + [jadeify][B] + [brfs][F]
 
 ### `GET /index.css`
 parse `/index.styl` with [kouto-swiss][D]
@@ -69,7 +69,7 @@ combine [dependencies of /bower.json](https://github.com/ck86/main-bower-files#o
 ### `Otherwise`
 to static serving. (__If a static file exists, the middlewares will not be executed__)
 
-[A]: https://github.com/substack/coffeeify#readme
+[A]: https://github.com/jsdf/coffee-reactify#readme
 [B]: https://github.com/domenic/jadeify#readme
 [C]: https://github.com/olov/ng-annotate#readme
 [D]: https://github.com/krkn/kouto-swiss#readme

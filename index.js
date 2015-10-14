@@ -22,7 +22,7 @@ module.exports= function(options){
   middleware.use(express.static(options.cwd));
 
   middleware.use(onefile(options));
-  middleware.use(cjs({root:options.cwd,bundleExternal:options.bundleExternal}));
+  middleware.use(cjs(options));
 
   return middleware;
 };
