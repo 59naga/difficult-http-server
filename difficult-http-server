@@ -42,9 +42,6 @@ commander
   .command('*')
   .description('boot the DifficultHTTPServer at *<rootDir>')
   .action(function(rootDir,options){
-    console.log(options);
-    process.exit(0);
-
     var app= express();
     app.use(dhs({cwd:path.resolve(process.cwd(),rootDir),bundleExternal:commander.bundleExternal}));
     app.listen(commander.port,function(){
