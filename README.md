@@ -76,6 +76,84 @@ to static serving. (__If a static file exists, the middlewares will not be execu
 [E]: https://github.com/59naga/express-onefile#readme
 [F]: https://github.com/substack/brfs#readme
 
+# Getting started
+
+## React
+
+```bash
+mkdir gs-react
+cd gs-react
+
+dhs touch
+touch bower.json
+tree . -L 1
+# .
+# ├── bower.json
+# ├── index.coffee
+# ├── index.jade
+# └── index.styl
+```
+
+`bower.json`
+```json
+{
+  "name": "gs-react",
+  "dependencies": {
+    "react": "~0.14.0"
+  },
+  "overrides": {
+    "react": {
+      "main": [
+        "react.js",
+        "react-dom.js"
+      ]
+    }
+  }
+}
+```
+
+`index.coffee`
+```coffee
+Hello= React.createClass
+  render: ->
+    <div className="hello">
+      <p>this is react</p>
+    </div>
+
+addEventListener 'DOMContentLoaded',->
+  ReactDOM.render <Hello />,document.querySelector 'main'
+```
+
+`index.jade`
+```jade
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title DifficultHTTPServer
+    script(src="pkgs.js")
+    script(src="index.js")
+    link(href="index.css" rel="stylesheet")
+  body
+    h1 hello dhs
+    
+    main
+```
+
+`index.styl`
+```stylus
+// unused
+```
+
+---
+
+```bash
+bower install
+
+dhs . --open
+# DifficultHTTPServer at http://localhost:59798 using .
+```
+
 # Example
 * [narou.berabou.me](https://github.com/59naga/narou.berabou.me) `http://syosetu.com/` Vertical Reader
 * [vpn.berabou.me](https://github.com/59naga/vpn.berabou.me) MikuMikuDance Vocaloid-Pose-Data(`.vpd`) Viewer 
