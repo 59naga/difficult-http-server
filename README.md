@@ -5,7 +5,7 @@ DifficultHTTPServer [![NPM version][npm-image]][npm]
 
 * static-server
 * bower compressor
-* single file compiler([coffeeify][A] / [jade][2-2] / [stylus][2-3])
+* single file compiler([coffee-reactify][A] / [jade][2-2] / [stylus][2-3])
 
 # Usage
 
