@@ -26,7 +26,7 @@ tree .
 
 # fetch packages(optional)
 npm install bower --global
-bower init # or `yes '' | bower init`
+bower init # or `echo '{"name":"'$(basename $PWD)'"}' > bower.json`
 bower install angular-ui-router --save
 
 # boot
