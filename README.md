@@ -1,5 +1,4 @@
-DifficultHTTPServer [![NPM version][npm-image]][npm]
----
+# DifficultHttpServer [![NPM version][npm-image]][npm] [![Build Status][travis-image]][travis] [![Coverage Status][coveralls-image]][coveralls]
 
 > Instant HTTP Server for Single Page Application
 
@@ -58,7 +57,7 @@ See also `$ dhs`
 parse `/index.jade`
 
 ### `GET /index.js`
-parse `/index.coffee` using [coffee-reactify][A] with [ng-annotate][C] + [jadeify][B] + [brfs][F]
+parse `/index.coffee` using [coffee-reactify][A] with [ng-annotate][C] + [plain-jadeify][B] + [brfs][F]
 
 ### `GET /index.css`
 parse `/index.styl` with [kouto-swiss][D]
@@ -70,7 +69,7 @@ combine [dependencies of /bower.json](https://github.com/ck86/main-bower-files#o
 to static serving. (__If a static file exists, the middlewares will not be executed__)
 
 [A]: https://github.com/jsdf/coffee-reactify#readme
-[B]: https://github.com/domenic/jadeify#readme
+[B]: https://github.com/59naga/plain-jadeify#readme
 [C]: https://github.com/olov/ng-annotate#readme
 [D]: https://github.com/krkn/kouto-swiss#readme
 [E]: https://github.com/59naga/express-onefile#readme
@@ -95,6 +94,7 @@ tree . -L 1
 ```
 
 `bower.json`
+
 ```json
 {
   "name": "gs-react",
@@ -113,18 +113,28 @@ tree . -L 1
 ```
 
 `index.coffee`
+
 ```coffee
-Hello= React.createClass
+class Hello extends React.Component
+  constructor: ->
+    super
+
+    @state= {message:'this is react'}
+
   render: ->
-    <div className="hello">
-      <p>this is react</p>
+    <div onClick={@handleClick}>
+      <p>{@state.message}</p>
     </div>
 
+  handleClick: =>
+    @setState {message:'awesome'}
+  
 addEventListener 'DOMContentLoaded',->
   ReactDOM.render <Hello />,document.querySelector 'main'
 ```
 
 `index.jade`
+
 ```jade
 doctype html
 html
@@ -135,17 +145,14 @@ html
     script(src="index.js")
     link(href="index.css" rel="stylesheet")
   body
-    h1 hello dhs
-    
     main
 ```
 
 `index.styl`
-```stylus
+
+```styl
 // unused
 ```
-
----
 
 ```bash
 bower install

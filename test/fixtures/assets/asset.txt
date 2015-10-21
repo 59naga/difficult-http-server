@@ -1,0 +1,1 @@
+Expect to be converted into a buffer
