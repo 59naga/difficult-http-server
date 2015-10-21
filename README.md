@@ -156,7 +156,7 @@ dhs . --open
 
 # Example
 * [narou.berabou.me](https://github.com/59naga/narou.berabou.me) `http://syosetu.com/` Vertical Reader
-* [vpn.berabou.me](https://github.com/59naga/vpn.berabou.me) MikuMikuDance Vocaloid-Pose-Data(`.vpd`) Viewer 
+* [vpd.berabou.me](https://github.com/59naga/vpd.berabou.me) MikuMikuDance Vocaloid-Pose-Data(`.vpd`) Viewer 
 * [nicolive.berabou.me](https://github.com/59naga/nicolive.berabou.me) `http://live.nicovideo.jp/` Comment Viewer
 
 # Awesome converters
