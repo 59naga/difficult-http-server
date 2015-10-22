@@ -1,6 +1,6 @@
 {
   "name": "difficult-http-server",
-  "version": "0.0.12-alpha",
+  "version": "0.0.12",
   "description": "Instant HTTP Server for Single Page Application",
 
   "main": "lib",
@@ -28,7 +28,7 @@
   "dependencies": {
     "commander": "^2.8.1",
     "express": "^4.13.3",
-    "express-cjs": "^0.0.9",
+    "express-cjs": "^0.0.10",
     "express-onefile": "^0.0.5",
     "open": "0.0.5",
     "touch": "^1.0.0"

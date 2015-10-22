@@ -16,6 +16,7 @@ commander
   .usage('<rootDir>')
   .option('-p, --port <number>','listening port <number>',59798)
   .option('-o, --open [browser]','open the `http://localhost`')
+  .option('-h, --html5Mode','turn off bundling of all external modules in `./pkgs.js`',false)
   .option('-B, --no-bundle-external','turn off bundling of all external modules in `./pkgs.js`',true)
   .option('-R, --no-use-reactify','use `coffeeify` at `./index.coffee`',true)
   .option('-N, --no-use-ngannotate','disable `browserify-ngannotate` at `./index.coffee`',true)
@@ -43,11 +44,11 @@ commander
   .description('boot the DifficultHTTPServer at *<rootDir>')
   .action(function(rootDir,options){
     // Default
-    options.cwd= path.resolve(process.cwd(),rootDir);
+    commander.cwd= path.resolve(process.cwd(),rootDir);
 
     // Boot
     var app= express();
-    app.use(dhs(options));
+    app.use(dhs(commander));
     app.listen(commander.port,function(){
       var url= 'http://localhost:'+commander.port;
       console.log('DifficultHTTPServer at %s using %s',url,rootDir);
